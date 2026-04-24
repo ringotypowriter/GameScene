@@ -1,0 +1,20 @@
+Schedulers:
+  FD_GlobalTimer:
+    CounterTime: 3600 # Seconds
+    Functions:
+      - 'broadcast(msg:探索任务结束)'
+      - 'wait(val: 15)' # Not been implemented
+      - 'shutdown()'
+  FD_RefresherTimer:
+    CounterTime: 600
+    Options:
+      Deactivate: false # Default false
+      Async: true
+    Functions:
+      - 'refreshMap()'
+      - 'resetScheduler(scheduler:$scheduler$)'
+  FD_DeploySupplier:
+    CounterTime: 1200
+    Functions:
+      - 'refreshSupply()'
+      - 'resetScheduler(scheduler:$scheduler$)'

@@ -1,0 +1,13 @@
+RadiusAreaTemplate:
+  Pos-A: "world,0,0,0,0,0"
+  Pos-B: "world,0,0,0,0,0"
+  Options:
+    AreaType: Radius
+    Timestamp: $TIME$
+    Radius: 20.0
+CuboidAreaTemplate:
+  Pos-A: "world,0,0,0,0,0"
+  Pos-B: "world,10,10,10,0,0"
+  Options:
+    AreaType: Cuboid
+    Timestamp: $TIME$

@@ -1,0 +1,35 @@
+LootTables:
+  ExampleTables:
+    Range:
+      Min: 0
+      Max: 1
+    Dices:
+      FirstDice:
+        priority: 0
+        priorityOperator: equals
+        items:
+        - 'bandage(amount:$random$,randomMax: 3)'
+        - 'GOLDEN_APPLE(displayName: "&6FALSE GOLDEN APPLE", lores: This is a false
+          Golden apple ; which can damage you)'
+      SecondDice:
+        priority: 1
+        items:
+        - 'coins(amount:$random$,randomMax: 15)'
+        - 'APPLE(displayName: &6FALSE GOLDEN APPLE, lores: This is a false Golden
+          apple ; which can damage you, amount: $random$, randomMax: 15, randomMin:
+          3)'
+  ZombieDrop:
+    SingleDice:
+      percent: 50
+      items:
+      - 'ROTTEN_FLESH(displayName: "&b烂肉", lores:"&f来源不明的肉;&f已经高度腐烂", amount: 2)'
+  RareZombieDrop:
+    Dices:
+      Rare:
+        percent: 2
+        items:
+        - DIAMOND()
+      Common:
+        percent: 75
+        items:
+        - 'ROTTEN_FLESH(amount: 2)'

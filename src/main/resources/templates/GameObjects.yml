@@ -1,0 +1,20 @@
+Objects:
+  GameJoin: 
+    type: "PlayerSpawn"
+    options:
+      Async: false
+      location: "LocationKeyPosA"
+      functions:
+        - 'sendMessage(player:$player$, msg:§a你已位于出生点)'
+        - 'heal(player:$player$, val:20)'
+  HealingEffectCircle:
+    type: "Aura"
+    options:
+      location: "LocationKeyPosB"
+      applyDelay: 3
+      playerFunctions:
+        - 'modifyHealth(player: $player$, operator: heal, val: 10)'
+#      heal: 10
+#      delay: 1
+#      delayVariables: 'healSpeed' #如果这个存在，则上方的delay选项无效，优先使用Variables里的数值
+#      delayUnit: 'seconds'

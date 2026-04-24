@@ -1,0 +1,7 @@
+Events:
+  JoinEventTest:
+    On: "player_join_event"
+    Functions:
+      - ':label1|condition'
+      - 'sendMessage(player: $player$, msg: "PlayerJoinEventCalled", isAction: yes)'
+      - 'if(operator: >, val: %money%, require: 20, goto: label1)'

@@ -1,0 +1,15 @@
+package skypixeldev.gamescene.scene.pub.property;
+
+public enum PlayerProperty {
+    IMMUNE_FALL_DAMAGE,
+    IMMUNE_ALL_DAMAGE,
+    IMMUNE_MONSTER_DAMAGE,
+    IMMUNE_PROJECTILE_DAMAGE,
+    IMMUNE_PLAYER_DAMAGE,
+    IMMUNE_FIRE_DAMAGE,
+    IMMUNE_DROWN_DAMAGE,
+    IMMUNE_HUNGER,
+    NO_ATTACK_DAMAGE,
+    NO_BLOCK_BREAK,
+    NO_BLOCK_PLACE
+}

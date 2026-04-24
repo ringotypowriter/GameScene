@@ -1,0 +1,4 @@
+name: GameScene
+version: ${project.version}
+main: skypixeldev.gamescene.Bootstrap
+softdepend: ['DungeonPlus']
